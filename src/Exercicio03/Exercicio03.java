@@ -165,6 +165,7 @@ public class Exercicio03 {
 				}
 			}
 		}
+		System.out.println(contaCC.getClientes().getNomeCliente());
 	}
 	// Conta Empresarial
 
