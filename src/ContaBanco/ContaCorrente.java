@@ -17,7 +17,7 @@ public class ContaCorrente extends Conta {
 	private Double valor;
 	private double saldo;
 
-	public ContaCorrente(String nomeBanco, String codigoIdentificadorBanco, String numConta, String numAgencia,
+	public ContaCorrente(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia,
 			double saldo, LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento,
 			Integer quantTransferencia, Clientes cliente, Integer quantMaximaTransferencia, Integer quantMaximaSaque) {
 		super(nomeBanco, codigoIdentificadorBanco, numConta, numAgencia, saldo, dataAbertura, dataFechamento,

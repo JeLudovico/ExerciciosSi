@@ -13,10 +13,8 @@ public class ContaPoupanca extends Conta {
 	private Integer mesesCarencia = 7;
 	private Integer qtdMaximaTransferencia = 10;
 
-	Calendar cal = Calendar.getInstance();
-	Calendar cal2 = Calendar.getInstance();
 
-	public ContaPoupanca(String nomeBanco, String codigoIdentificadorBanco, String numConta, String numAgencia,
+	public ContaPoupanca(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia,
 			double saldo, LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento,
 			Integer quantTransferencia, Clientes cliente) {
 		super(nomeBanco, codigoIdentificadorBanco, numConta, numAgencia, saldo, dataAbertura, dataFechamento,
@@ -98,11 +96,11 @@ public class ContaPoupanca extends Conta {
 
 	}
 
-	@Override
-	public String toString() {
-		return "ContaPoupanca [valorizacaoMensal=" + valorizacaoMensal + ", mesesCarencia=" + mesesCarencia
-				+ ", qtdMaximaTransferencia=" + qtdMaximaTransferencia + ", cal=" + cal + ", cal2=" + cal2 + ", saldo="
-				+ saldo + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "ContaPoupanca [valorizacaoMensal=" + valorizacaoMensal + ", mesesCarencia=" + mesesCarencia
+//				+ ", qtdMaximaTransferencia=" + qtdMaximaTransferencia + ", cal=" + cal + ", cal2=" + cal2 + ", saldo="
+//				+ saldo + "]";
+//	}
 
 }

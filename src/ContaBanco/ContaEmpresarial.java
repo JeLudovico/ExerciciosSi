@@ -8,7 +8,7 @@ public class ContaEmpresarial extends Conta {
 
 	private String nomeEmpresa;
 
-	public ContaEmpresarial(String nomeBanco, String codigoIdentificadorBanco, String numConta, String numAgencia,
+	public ContaEmpresarial(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia,
 			double saldo, LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento,
 			Integer quantTransferencia, Clientes cliente, String nomeEmpresa) {
 		super(nomeBanco, codigoIdentificadorBanco, numConta, numAgencia, saldo, dataAbertura, dataFechamento, motivoFechamento,

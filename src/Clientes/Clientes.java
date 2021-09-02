@@ -7,25 +7,21 @@ public class Clientes {
 	private Integer numConta;
 	private Integer numAgencia;
 	private PerfilCliente PerfilCliente;
+	//protected double saldo;
 
-	public Clientes(String nomeCliente, Integer numeroDocumentoCliente, Integer numConta, Integer numAgencia,
+	public Clientes(String nomeCliente, Integer numeroDocumentoCliente, Integer numConta, double saldo,
 			PerfilCliente perfilCliente) {
 		this.nomeCliente = nomeCliente;
 		this.numeroDocumentoCliente = numeroDocumentoCliente;
 		this.numConta = numConta;
-		this.numAgencia = numAgencia;
 		this.PerfilCliente = perfilCliente;
-	}
-
-	public Clientes(String string, String string2, double d, PerfilCliente pessoaJuridica) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getNomeCliente() {
 		return nomeCliente;
 	}
 
-	public void setNomeCLiente(String nomeCliente) {
+	public void setNomeCliente(String nomeCliente) {
 		this.nomeCliente = nomeCliente;
 	}
 
@@ -43,14 +39,6 @@ public class Clientes {
 
 	public void setNumConta(Integer numConta) {
 		this.numConta = numConta;
-	}
-
-	public Integer getNumAgencia() {
-		return numAgencia;
-	}
-
-	public void setNumAgencia(Integer numConta) {
-		this.numAgencia = numAgencia;
 	}
 
 	public PerfilCliente getPerfilCliente() {
@@ -90,7 +78,7 @@ public class Clientes {
 	@Override
 	public String toString() {
 		return "Cliente [nomeCliente=" + nomeCliente + ", numeroDocumentoCliente=" + numeroDocumentoCliente
-				+ ", numConta=" + numConta + ", numAgencia=" + numAgencia + ", Perfil_Cliente=" + PerfilCliente + "]";
+				+ ", numConta=" + numConta + ", PerfilCliente=" + PerfilCliente + "]";
 	}
 
 }

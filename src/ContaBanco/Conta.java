@@ -10,9 +10,9 @@ import Clientes.Clientes;
 public abstract class Conta {
 
 	private String nomeBanco;
-	private String codigoIdentificadorBanco;
-	private String numConta;
-	private String numAgencia;
+	private Integer codigoIdentificadorBanco;
+	private Integer numConta;
+	private Integer numAgencia;
 	protected double saldo;
 	protected LocalDate dataAbertura;
 	private LocalDate dataFechamento;
@@ -23,10 +23,10 @@ public abstract class Conta {
 
 	
 
-	public Conta(String nomeBanco, String codigoIdentificadorBanco, String numConta, String numAgencia, double saldo,
+	public Conta(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia, double saldo,
 			LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento, Integer quantTransferencia,
 			Clientes clientes) {
-		this.nomeBanco = nomeBanco;
+		//this.nomeBanco = nomeBanco;
 		this.codigoIdentificadorBanco = codigoIdentificadorBanco;
 		this.numConta = numConta;
 		this.numAgencia = numAgencia;
@@ -46,27 +46,27 @@ public abstract class Conta {
 		this.nomeBanco = nomeBanco;
 	}
 
-	public String getCodigoIdentificadorBanco() {
+	public Integer getCodigoIdentificadorBanco() {
 		return codigoIdentificadorBanco;
 	}
 
-	public void setCodigoIdentificadorBanco(String codigoIdentificadorBanco) {
+	public void setCodigoIdentificadorBanco(Integer codigoIdentificadorBanco) {
 		this.codigoIdentificadorBanco = codigoIdentificadorBanco;
 	}
 
-	public String getNumeroConta() {
+	public Integer getNumeroConta() {
 		return numConta;
 	}
 
-	public void setNumeroConta(String numConta) {
+	public void setNumeroConta(Integer numConta) {
 		this.numConta = numConta;
 	}
 
-	public String getNumAgencia() {
+	public Integer getNumAgencia() {
 		return numAgencia;
 	}
 
-	public void setNumeroAgencia(String numAgencia) {
+	public void setNumeroAgencia(Integer numAgencia) {
 		this.numAgencia = numAgencia;
 	}
 
