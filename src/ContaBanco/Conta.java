@@ -1,14 +1,12 @@
 package ContaBanco;
 
-import java.sql.Date;
-import java.text.DateFormat;
 import java.time.LocalDate;
-
-
+import java.util.List;
 import Clientes.Clientes;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 
+	private static final List ArrayConta = null;
 	private String nomeBanco;
 	private Integer codigoIdentificadorBanco;
 	private Integer numConta;
@@ -21,12 +19,10 @@ public abstract class Conta {
 
 	private Clientes clientes;
 
-	
-
 	public Conta(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia, double saldo,
 			LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento, Integer quantTransferencia,
 			Clientes clientes) {
-		//this.nomeBanco = nomeBanco;
+		// this.nomeBanco = nomeBanco;
 		this.codigoIdentificadorBanco = codigoIdentificadorBanco;
 		this.numConta = numConta;
 		this.numAgencia = numAgencia;
@@ -117,8 +113,6 @@ public abstract class Conta {
 		}
 	}
 
-	
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -169,6 +163,23 @@ public abstract class Conta {
 		} else {
 			System.out.println("Você não possui saldo suficiente para está operação");
 		}
+	}
+
+	public int compareTo(Conta conta) {
+		if ((this.numAgencia) < (conta.numAgencia)) {
+				return -1;
+		}
+		if ((this.numAgencia) > (conta.numAgencia)) {
+				return 1;
+		}
+		
+		if ((this.numConta) < (conta.numConta)) {
+				return -1;
+		}
+		if ((this.numConta) > (conta.numConta)) {
+				return 1;
+		}
+		return 0;
 	}
 
 }
