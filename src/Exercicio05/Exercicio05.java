@@ -12,8 +12,6 @@ import Clientes.PerfilCliente;
 
 public class Exercicio05 {
 
-	// private static final Object ArrayContaDuplicado = null;
-
 	public static void main(String[] args) {
 
 		// incluir objetos dentro do <>
