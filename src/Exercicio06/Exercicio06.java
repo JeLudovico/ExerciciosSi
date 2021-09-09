@@ -72,6 +72,7 @@ public class Exercicio06 {
 		ContaEmpresarial contaEmpresarialDuplicado6 = new ContaEmpresarial("Flex", 34, 2543, 24, 9800.0, LocalDate.parse("2019-10-10"), LocalDate.parse("2009-07-10"), "Divida", 10, cliente20, "Clube");
 
 		Set<Conta> contasSet = new HashSet<>();
+		 int contas = 30;
 
 		contasSet.add(contaPoupanca);
 		contasSet.add(contaPoupanca1);
@@ -105,8 +106,8 @@ public class Exercicio06 {
 		contasSet.add(contaCorrenteDuplicado6);
 		contasSet.add(contaEmpresarialDuplicado6);
 
-		System.out.println("Tentativas de inserção: 30");
-
+		System.out.println("Tentativas de inserÃ§Ã£o: " + contas);
+		
 		System.out.printf("Total inserido: ");
 		System.out.println(contasSet.size());
 
