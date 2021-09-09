@@ -12,7 +12,6 @@ import Clientes.PerfilCliente;
 
 public class Exercicio05 {
 
-	// private static final Object ArrayContaDuplicado = null;
 
 	public static void main(String[] args) {
 
@@ -136,7 +135,8 @@ public class Exercicio05 {
 		arrayConta.add(contaEmpresarialDuplicado5);
 		arrayConta.add(contaCorrenteDuplicado6);
 		arrayConta.add(contaEmpresarialDuplicado6);
-
+	
+				
 		for (int x = 0; x < arrayConta.size(); x++) {
 			for (int z = x + 1; z < arrayConta.size(); z++) {
 				if (arrayConta.get(x).equals(arrayConta.get(z))) {
@@ -151,6 +151,9 @@ public class Exercicio05 {
 			System.out.println(
 					arrayConta.get(i1).getNumAgencia() + " Agencia - Conta " + arrayConta.get(i1).getNumeroConta());
 		}
+		
+		//System.out.println(arrayConta.size());
+		//System.out.println(arrayContaDuplicados.size());
 
 	}
 

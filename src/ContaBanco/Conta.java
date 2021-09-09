@@ -2,11 +2,13 @@ package ContaBanco;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
+
 import Clientes.Clientes;
 
 public abstract class Conta implements Comparable<Conta> {
 
-	private static final List ArrayConta = null;
+
 	private String nomeBanco;
 	private Integer codigoIdentificadorBanco;
 	private Integer numConta;
@@ -172,7 +174,6 @@ public abstract class Conta implements Comparable<Conta> {
 		if ((this.numAgencia) > (conta.numAgencia)) {
 				return 1;
 		}
-		
 		if ((this.numConta) < (conta.numConta)) {
 				return -1;
 		}
