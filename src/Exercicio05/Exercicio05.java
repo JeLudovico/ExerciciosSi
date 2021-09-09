@@ -12,10 +12,6 @@ import Clientes.PerfilCliente;
 
 public class Exercicio05 {
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1d9c764a36c32558eda29e0ed4f12626fe9290b8
 	public static void main(String[] args) {
 
 		// incluir objetos dentro do <>
