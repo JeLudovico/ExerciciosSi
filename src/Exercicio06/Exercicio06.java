@@ -6,12 +6,12 @@ import java.util.HashSet;
 
 import java.util.Set;
 
+import Cliente.Cliente;
+import Cliente.PerfilCliente;
 import ContaBanco.Conta;
 import ContaBanco.ContaCorrente;
 import ContaBanco.ContaEmpresarial;
 import ContaBanco.ContaPoupanca;
-import Clientes.Clientes;
-import Clientes.PerfilCliente;
 
 public class Exercicio06 {
 
@@ -19,26 +19,26 @@ public class Exercicio06 {
 
 	public static void main(String[] args) {
 
-		Clientes cliente1 = new Clientes("Josafa", 203280, 0101, 012, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente2 = new Clientes("Bartolomeu", 800110, 02, 802.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente3 = new Clientes("Jurema", 0050011, 03, 10034.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente4 = new Clientes("Josafa1", 108009, 04, 2002.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente5 = new Clientes("Bartolomeu1", 7800110, 05, 502.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente6 = new Clientes("jurema1", 3050011, 06, 9034.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente7 = new Clientes("Josafa2", 8009801, 07, 7702.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente8 = new Clientes("Bartolomeu2", 2800999, 18, 902.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente9 = new Clientes("Jurema2", 90050011, 89, 6034.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente10 = new Clientes("Josafa3", 559899, 10, 802.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente11 = new Clientes("Bartolomeu3", 18001100, 11, 892.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente12 = new Clientes("Jurema3", 30999911, 12, 8034.5, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente13 = new Clientes("Josafa4", 503333, 13, 1112.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente14 = new Clientes("Bartolomeu11", 2000032, 14, 502.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente15 = new Clientes("Jurema12", 30059988, 15, 8034.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente16 = new Clientes("Josafa13", 18009800, 16, 902.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente17 = new Clientes("Bartolomeu14", 9000110, 17, 555.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente18 = new Clientes("Jurema15", 90050011, 18, 888.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente19 = new Clientes("Bartolomeu16", 2800119, 19, 101.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente20 = new Clientes("Jurema17", 30055511, 20, 134.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente1 = new Cliente("Josafa", 203280, 0101, 012, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente2 = new Cliente("Bartolomeu", 800110, 02, 802.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente3 = new Cliente("Jurema", 0050011, 03, 10034.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente4 = new Cliente("Josafa1", 108009, 04, 2002.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente5 = new Cliente("Bartolomeu1", 7800110, 05, 502.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente6 = new Cliente("jurema1", 3050011, 06, 9034.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente7 = new Cliente("Josafa2", 8009801, 07, 7702.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente8 = new Cliente("Bartolomeu2", 2800999, 18, 902.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente9 = new Cliente("Jurema2", 90050011, 89, 6034.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente10 = new Cliente("Josafa3", 559899, 10, 802.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente11 = new Cliente("Bartolomeu3", 18001100, 11, 892.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente12 = new Cliente("Jurema3", 30999911, 12, 8034.5, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente13 = new Cliente("Josafa4", 503333, 13, 1112.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente14 = new Cliente("Bartolomeu11", 2000032, 14, 502.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente15 = new Cliente("Jurema12", 30059988, 15, 8034.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente16 = new Cliente("Josafa13", 18009800, 16, 902.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente17 = new Cliente("Bartolomeu14", 9000110, 17, 555.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente18 = new Cliente("Jurema15", 90050011, 18, 888.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente19 = new Cliente("Bartolomeu16", 2800119, 19, 101.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente20 = new Cliente("Jurema17", 30055511, 20, 134.1, PerfilCliente.PESSOA_JURIDICA);
 
 		ContaPoupanca contaPoupanca = new ContaPoupanca("BancoBrasil", 87, 29, 67, 900.0, LocalDate.parse("2003-04-11"), LocalDate.parse("2013-04-29"), "Aluguel", 9, cliente1);
 		ContaCorrente contaCorrente = new ContaCorrente("NuBank", 37, 8080, 17, 7000.0, LocalDate.parse("2011-09-09"), LocalDate.parse("2019-01-09"), "Falecimento", 50, cliente2, 5, 8);

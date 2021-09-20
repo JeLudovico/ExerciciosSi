@@ -2,8 +2,8 @@ package Exercicio02;
 
 import java.time.LocalDate;
 
-import Clientes.Clientes;
-import Clientes.PerfilCliente;
+import Cliente.Cliente;
+import Cliente.PerfilCliente;
 import ContaBanco.Conta;
 import ContaBanco.ContaCorrente;
 import ContaBanco.ContaEmpresarial;
@@ -22,14 +22,14 @@ public class Exercicio02 {
 		stringIguaisSemEquals(A, B);
 		stringIguaisComEquals(A, B);
 
-		Clientes cliente1 = new Clientes("Josafa", 203280, 0101, 012, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente2 = new Clientes("Bartolomeu", 800110, 02, 802.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente3 = new Clientes("Jurema", 0050011, 03, 10034.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente4 = new Clientes("Josafa1", 108009, 04, 2002.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente5 = new Clientes("Bartolomeu1", 7800110, 05, 502.0, PerfilCliente.PESSOA_FISICA);
-		Clientes cliente6 = new Clientes("jurema1", 3050011, 06, 9034.1, PerfilCliente.PESSOA_JURIDICA);
-		Clientes cliente7 = new Clientes("Josafa2", 8009801, 07, 7702.7, PerfilCliente.FUNCIONARIO_BANCO);
-		Clientes cliente8 = new Clientes("Bartolomeu2", 2800999, 18, 902.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente1 = new Cliente("Josafa", 203280, 0101, 012, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente2 = new Cliente("Bartolomeu", 800110, 02, 802.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente3 = new Cliente("Jurema", 0050011, 03, 10034.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente4 = new Cliente("Josafa1", 108009, 04, 2002.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente5 = new Cliente("Bartolomeu1", 7800110, 05, 502.0, PerfilCliente.PESSOA_FISICA);
+		Cliente cliente6 = new Cliente("jurema1", 3050011, 06, 9034.1, PerfilCliente.PESSOA_JURIDICA);
+		Cliente cliente7 = new Cliente("Josafa2", 8009801, 07, 7702.7, PerfilCliente.FUNCIONARIO_BANCO);
+		Cliente cliente8 = new Cliente("Bartolomeu2", 2800999, 18, 902.0, PerfilCliente.PESSOA_FISICA);
 
 		ContaPoupanca contaPoupanca = new ContaPoupanca("BancoBrasil", 87, 29, 67, 900.0, LocalDate.parse("2003-04-11"),
 				LocalDate.parse("2013-04-29"), "Aluguel", 9, cliente1);

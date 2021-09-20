@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
 
-import Clientes.Clientes;
+import Cliente.Cliente;
 
 public abstract class Conta implements Comparable<Conta> {
 
@@ -19,11 +19,11 @@ public abstract class Conta implements Comparable<Conta> {
 	private String motivoFechamento;
 	private Integer quantTransferencia;
 
-	private Clientes clientes;
+	private Cliente cliente;
 
 	public Conta(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia, double saldo,
 			LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento, Integer quantTransferencia,
-			Clientes clientes) {
+			Cliente clientes) {
 		// this.nomeBanco = nomeBanco;
 		this.codigoIdentificadorBanco = codigoIdentificadorBanco;
 		this.numConta = numConta;
@@ -33,7 +33,7 @@ public abstract class Conta implements Comparable<Conta> {
 		this.dataFechamento = dataFechamento;
 		this.motivoFechamento = motivoFechamento;
 		this.quantTransferencia = quantTransferencia;
-		this.clientes = clientes;
+		this.cliente = clientes;
 	}
 
 	public String getNomeBanco() {
@@ -92,17 +92,18 @@ public abstract class Conta implements Comparable<Conta> {
 		this.motivoFechamento = motivoFechamento;
 	}
 
-	public Clientes getClientes() {
-		return clientes;
+	public Cliente getCliente() {
+		return cliente;
 	}
 
-	public void setClientes(Clientes clientes) {
-		this.clientes = clientes;
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	public Integer getQuantTransferencia() {
 		return quantTransferencia;
 	}
+
 
 	public abstract void saque(double saque);
 
@@ -148,7 +149,7 @@ public abstract class Conta implements Comparable<Conta> {
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(clientes.toString());
+		sb.append(cliente.toString());
 		sb.append("Nome do Banco: " + getNomeBanco() + "\n");
 		sb.append("Codigo Identificador: " + getCodigoIdentificadorBanco() + "\n");
 		sb.append("Numero da Conta: " + getNumAgencia() + "\n");
@@ -182,5 +183,6 @@ public abstract class Conta implements Comparable<Conta> {
 		}
 		return 0;
 	}
+
 
 }

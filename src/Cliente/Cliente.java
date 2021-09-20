@@ -1,6 +1,6 @@
-package Clientes;
+package Cliente;
 
-public class Clientes {
+public class Cliente {
 
 	private String nomeCliente;
 	private Integer numeroDocumentoCliente;
@@ -9,7 +9,7 @@ public class Clientes {
 	private PerfilCliente PerfilCliente;
 	//protected double saldo;
 
-	public Clientes(String nomeCliente, Integer numeroDocumentoCliente, Integer numConta, double saldo,
+	public Cliente(String nomeCliente, Integer numeroDocumentoCliente, Integer numConta, double saldo,
 			PerfilCliente perfilCliente) {
 		this.nomeCliente = nomeCliente;
 		this.numeroDocumentoCliente = numeroDocumentoCliente;
@@ -66,7 +66,7 @@ public class Clientes {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Clientes other = (Clientes) obj;
+		Cliente other = (Cliente) obj;
 		if (numeroDocumentoCliente == null) {
 			if (other.numeroDocumentoCliente != null)
 				return false;

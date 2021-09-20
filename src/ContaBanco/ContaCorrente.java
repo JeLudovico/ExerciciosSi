@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Calendar;
 
-import Clientes.Clientes;
+import Cliente.Cliente;
 
 public class ContaCorrente extends Conta {
 
@@ -19,7 +19,7 @@ public class ContaCorrente extends Conta {
 
 	public ContaCorrente(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia,
 			double saldo, LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento,
-			Integer quantTransferencia, Clientes cliente, Integer quantMaximaTransferencia, Integer quantMaximaSaque) {
+			Integer quantTransferencia, Cliente cliente, Integer quantMaximaTransferencia, Integer quantMaximaSaque) {
 		super(nomeBanco, codigoIdentificadorBanco, numConta, numAgencia, saldo, dataAbertura, dataFechamento,
 				motivoFechamento, quantTransferencia, cliente);
 		this.quantMaximaSaque = quantMaximaSaque;
@@ -98,7 +98,7 @@ public class ContaCorrente extends Conta {
 		return "ContaCorrente [quantMaximaTransferencia=" + quantMaximaTransferencia + ", quantMaximaSaque="
 				+ quantMaximaSaque + ", quantSaque=" + quantSaque + ", quantTransferencia=" + quantTransferencia
 				+ ", conta=" + conta + ", valor=" + valor + ", saldo=" + saldo + "cliente = "
-				+ getClientes().getNomeCliente() + "]";
+				+ getCliente().getNomeCliente() + "]";
 	}
 
 }

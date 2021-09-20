@@ -1,4 +1,4 @@
-package Clientes;
+package Cliente;
 
 public enum PerfilCliente {
 

@@ -2,7 +2,7 @@ package ContaBanco;
 
 import java.time.LocalDate;
 
-import Clientes.Clientes;
+import Cliente.Cliente;
 
 public class ContaEmpresarial extends Conta {
 
@@ -10,7 +10,7 @@ public class ContaEmpresarial extends Conta {
 
 	public ContaEmpresarial(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia,
 			double saldo, LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento,
-			Integer quantTransferencia, Clientes cliente, String nomeEmpresa) {
+			Integer quantTransferencia, Cliente cliente, String nomeEmpresa) {
 		super(nomeBanco, codigoIdentificadorBanco, numConta, numAgencia, saldo, dataAbertura, dataFechamento, motivoFechamento,
 				quantTransferencia, cliente);
 		this.nomeEmpresa = nomeEmpresa;

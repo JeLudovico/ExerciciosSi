@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
-import Clientes.Clientes;
+import Cliente.Cliente;
 
 public class ContaPoupanca extends Conta {
 
@@ -16,7 +16,7 @@ public class ContaPoupanca extends Conta {
 
 	public ContaPoupanca(String nomeBanco, Integer codigoIdentificadorBanco, Integer numConta, Integer numAgencia,
 			double saldo, LocalDate dataAbertura, LocalDate dataFechamento, String motivoFechamento,
-			Integer quantTransferencia, Clientes cliente) {
+			Integer quantTransferencia, Cliente cliente) {
 		super(nomeBanco, codigoIdentificadorBanco, numConta, numAgencia, saldo, dataAbertura, dataFechamento,
 				motivoFechamento, quantTransferencia, cliente);
 
@@ -96,6 +96,9 @@ public class ContaPoupanca extends Conta {
 
 	}
 
+	
+	
+	
 
 //	@Override
 //	public String toString() {
