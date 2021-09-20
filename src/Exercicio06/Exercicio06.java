@@ -108,7 +108,11 @@ public class Exercicio06 {
 		contasSet.add(contaCorrenteDuplicado6);
 		contasSet.add(contaEmpresarialDuplicado6);
 
+<<<<<<< HEAD
 		System.out.println("Tentativas de inserção: " + contas);
+=======
+		System.out.println("Tentativas de inserÃ§Ã£o: " + contas);
+>>>>>>> 13aaa96082ab7318cb5ab486e554e10ce710d95d
 		
 		System.out.printf("Total inserido: ");
 		System.out.println(contasSet.size());
