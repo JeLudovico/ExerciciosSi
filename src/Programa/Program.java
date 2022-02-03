@@ -95,8 +95,8 @@ public class Program {
 		// ContaCorrente contaArrayTesteCC = new ContaCorrente();
 		// ContaEmpresarial contaArrayTesteCE = new ContaEmpresarial();
 
-		// contaPoupancaArray.adicionaArrayContaPoupança(contaPoupancaJosafa);
-		// ccontaPoupancaArray.adicionaArrayContaPoupança(contaPoupancaKezia);
+		// contaPoupancaArray.adicionaArrayContaPoupanÃ§a(contaPoupancaJosafa);
+		// ccontaPoupancaArray.adicionaArrayContaPoupanÃ§a(contaPoupancaKezia);
 		//
 		//
 		// contaPoupancaArray.getPrimeiraContaPoupancaNoArray();
